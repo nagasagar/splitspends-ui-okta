@@ -1,0 +1,8 @@
+<mat-card>
+        <mat-card-content *ngIf="isAuthenticated">
+                        <app-expense-list></app-expense-list>
+        </mat-card-content>
+        <mat-card-content *ngIf="!isAuthenticated">
+                this is an excellent app to share your expenses among group of friends
+        </mat-card-content>
+</mat-card>
