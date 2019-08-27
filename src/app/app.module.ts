@@ -11,6 +11,7 @@ import { ExpenseListComponent } from './expense-list/expense-list.component';
 import { HomeComponent } from './home/home.component';
 import { AuthInterceptor } from './shared/okta/auth.interceptor';
 import { Routes, RouterModule } from '@angular/router';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 const oktaConfig = {
   issuer: 'https://dev-702641.okta.com/oauth2/default',
@@ -22,7 +23,8 @@ const oktaConfig = {
   declarations: [
     AppComponent,
     ExpenseListComponent,
-    HomeComponent
+    HomeComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

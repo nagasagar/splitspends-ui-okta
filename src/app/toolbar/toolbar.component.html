@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+    <span *ngIf="isAuthenticated" >Hey {{currentUser.firstName}}, {{currentUser.lastName}}!</span>
+    <span *ngIf="!isAuthenticated" >Welcome to SplitSpends!</span>
+    <span class="toolbar-spacer"></span>
+    <button mat-raised-button color="accent" *ngIf="!isAuthenticated" (click)="login()">Login</button>
+    <button mat-raised-button color="accent" *ngIf="isAuthenticated" (click)="logout()"
+        [routerLink]="['/home']">Logout
+    </button>
+</mat-toolbar>
